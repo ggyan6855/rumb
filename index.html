@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Video</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #video-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <script>
+            !function(r,u,m,b,l,e){
+                r._Rumble=b,
+                r[b]||(r[b]=function(){
+                    (r[b]._=r[b]._||[]).push(arguments);
+                    if(r[b]._.length==1){
+                        l=u.createElement(m),
+                        e=u.getElementsByTagName(m)[0],
+                        l.async=1,
+                        l.src="https://rumble.com/embedJS/u3y6z8k"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),
+                        e.parentNode.insertBefore(l,e)
+                    }
+                })
+            }(window, document, "script", "Rumble");
+        </script>
+        
+        <div id="rumble_v5j2xao"></div>
+        <script>
+            Rumble("play", {"video":"v5j2xao","div":"rumble_v5j2xao"});
+        </script>
+    </div>
+</body>
+</html>
